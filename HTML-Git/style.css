@@ -355,9 +355,6 @@ tbody tr:hover {
     box-shadow: 0 10px 18px rgba(205, 242, 43, 0.45);
 }
  
-/* ============================
-   FOOTER
-   ============================ */
 footer {
     text-align: center;
     padding: 25px 20px;
@@ -367,9 +364,6 @@ footer {
     font-weight: 600;
 }
  
-/* ============================
-   RESPONSIVE DESIGN
-   ============================ */
 @media (max-width: 768px) {
     .container {
         grid-template-columns: 1fr;
@@ -417,7 +411,6 @@ footer {
         text-align: center;
     }
  
-    /* Saat checkbox dicentang (label hamburger diklik), menu terbuka */
     .nav-toggle-checkbox:checked ~ .nav-links {
         max-height: 320px;
         padding-top: 14px;
