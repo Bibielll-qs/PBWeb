@@ -1,133 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tentang Bila</title>
+    <title>Profil &amp; Jadwal - Nur Aizah Bilqis Salsabila</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <header>
-        <h1 style="text-align: center">Hallo, Saya Bila</h1>
+    <header class="hero">
+        <div class="hero-text">
+            <h1 class="hero-title">
+                <span class="line line-1">Hallo,</span>
+                <span class="line line-2">Saya Bila</span>
+            </h1>
+            <p>Mahasiswa Informatika &mdash; Universitas Sanata Dharma</p>
+        </div>
     </header>
 
-    <main>
+    <nav class="navbar">
 
-        <section>
-            <h2>Tentang Saya</h2>
-            <p>Nama saya <b>Bila</b>, saya seorang mahasiswa <i>Informatika</i>, 
-                saya berkuliah di <u>Universitas Sanata Dharma</u>, 
-                Fakultas Sains Dan Teknologi, 
-                dan sekarang saya sudah semester <span style="color: rgb(244, 3, 3);">3</span>.</p>
-            <p style="text-align: right">Saya semester <span style="color: rgb(14, 14, 211); 
-                font-weight: bold;">3</span>.</p>
-        </section>
+        <div class="nav-links" id="navLinks">
+            <a href="#tentang">Tentang Saya</a>
+            <a href="#jadwal">Jadwal Kuliah</a>
+            <a href="#hobi">Hobi</a>
+            <a href="#funfact">Fun Fact</a>
+            <a href="#kampus">Kampus</a>
+        </div>
+    </nav>
 
-        <section>
-            <h2>Hobi Saya</h2>
-            <ul>
-                <li>Menonton anime</li>
-                <li>Menggambar</li>
-                <li>Mendengarkan musik</li>
-                <li>Jalan-jalan</li>
-            </ul>
-        </section>
+    <main class="container">
 
-            <section>
+        <div class="main-col">
+
+            <section class="card" id="tentang">
+                <h2>Tentang Saya</h2>
+                <p>
+                    Nama saya <b>Bila</b>, saya seorang mahasiswa <i>Informatika</i> di
+                    <u>Universitas Sanata Dharma</u>, Fakultas Sains Dan Teknologi,
+                    dan sekarang saya sudah semester <span class="semester-badge">3</span>.
+                </p>
+            </section>
+
+            <section class="card" id="jadwal">
+                <h2>Jadwal Kuliah Semester 3</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <caption>Jadwal perkuliahan mingguan semester 3</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Hari</th>
+                                <th scope="col">Jam</th>
+                                <th scope="col">Mata Kuliah</th>
+                                <th scope="col">Dosen</th>
+                                <th scope="col">Ruangan</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <th scope="row">Senin</th>
+                                <td><time>08.00 - 10.00</time></td>
+                                <td>Prob. Lanjutan</td>
+                                <td>Prof. Ir. Bambang Soelistijanto, Ph.D.</td>
+                                <td>Lab.Jarkom</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Selasa</th>
+                                <td><time>07.00 - 12.00</time></td>
+                                <td>Pemrograman Basis Web</td>
+                                <td>Bagaskara Eka Nugraha, S.T., M.Eng.</td>
+                                <td>Lab.Basis Data C</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Rabu</th>
+                                <td><time>10.00 - 18.00</time></td>
+                                <td>Machine Learning</td>
+                                <td>Prof. Dr. Ir. Anastasia Rita Widiarti</td>
+                                <td>Lab. Komputer Dasar A</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Kamis</th>
+                                <td><time>07.00 - 09.00</time></td>
+                                <td>Metode Numerik</td>
+                                <td>Ir. Drs. Haris Sriwindono, M.Kom., Ph.D.</td>
+                                <td>K.207</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Jumat</th>
+                                <td><time>07.00 - 09.00</time></td>
+                                <td>Aljabar Linear</td>
+                                <td>Eko Hari Parmadi, S.Si., M.Kom.</td>
+                                <td>K.204</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+        </div>
+
+        <aside class="side-col">
+
+            <section class="card" id="hobi">
+                <h2>Hobi Saya</h2>
+                <ul class="list-hobi">
+                    <li>Menonton anime</li>
+                    <li>Menggambar</li>
+                    <li>Mendengarkan musik</li>
+                    <li>Jalan-jalan</li>
+                </ul>
+            </section>
+
+            <section class="card" id="funfact">
                 <h2>Fun Fact Diri Saya</h2>
-                <ol>
+                <ol class="list-funfact">
                     <li>Saya wibu</li>
                     <li>Saya suka mie</li>
                     <li>Saya tidak suka bau buah sirsak</li>
                 </ol>
             </section>
 
-        <section>
-            <h2>Jadwal Kuliah Semester 3</h2>
+            <section class="card" id="kampus">
+                <h2>Universitas Sanata Dharma</h2>
+                <div class="kampus-container">
+                    <img class="kampus-logo" src="https://www.usd.ac.id/logo/usd.png" alt="Logo Universitas Sanata Dharma">
+                    <p>Ingin tahu lebih banyak tentang kampus saya?</p>
+                    <a class="btn-kampus" href="https://www.usd.ac.id" target="_blank" rel="noopener">
+                        Kunjungi Website USD
+                    </a>
+                </div>
+            </section>
 
-            <table border="1">
-                <caption>Jadwal perkuliahan mingguan semster 3</caption>
-
-                <thead>
-                    <tr>
-                        <th scope="col">Hari</th>
-                        <th scope="col">Jam</th>
-                        <th scope="col">Mata Kuliah</th>
-                        <th scope="col">Dosen</th>
-                        <th scope="col">Ruangan</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-
-                    <tr>
-                        <th scope="row">Senin</td>
-                        <td><time>08.00 - 10.00</time></td>
-                        <td>Prob. Lanjutan</td>
-                        <td>Prof. Ir. Bambang Soelistijanto, Ph.D.</td>
-                        <td>Lab.Jarkom</td>
-                    </tr>
-
-                    <tr>
-                        <th scope="row">Selasa</td>
-                        <td><time>07.00 - 12.00</time></td>
-                        <td>Pemrograman Basis Web</td>
-                        <td>Bagaskara Eka Nugraha, S.T., M.Eng.</td>
-                        <td>Lab.Basis Data C</td>
-                    </tr>
-
-                    <tr>
-                        <th scope="row">Rabu</td>
-                        <td><time>10.00 - 18.00</time></td>
-                        <td>Machine Learning</td>
-                        <td>Prof. Dr. Ir. Anastasia Rita Widiarti</td>
-                        <td>Lab. Komputer Dasar A</td>
-                    </tr>
-
-                    <tr>
-                        <th scope="row">Kamis</th>
-                        <td><time>07.00 - 09.00</time></td>
-                        <td>Metode Numerik</td>
-                        <td>Ir. Drs. Haris Sriwindono, M.Kom., Ph.D.</td>
-                        <td>K.207</td>
-                    </tr>
-
-                    <tr>
-                        <th scope="row">Jumat</td>
-                        <td><time>07.00 - 09.00</time></td>
-                        <td>Aljabar Linear</td>
-                        <td>Eko Hari Parmadi, S.Si., M.Kom.</td>
-                        <td>K.204</td>
-                    </tr>
-
-                </tbody>
-
-            </table>
-        </section>
-        
-        <section>
-            <h2>Saya kuliah di Universitas Sanata Dharma</h2>
-
-            <div style="text-align:left">
-                <img src="https://www.usd.ac.id/logo/usd.png"
-                    alt="Logo Universitas Sanata Dharma"
-                    width="200">
-            </div>
-
-            <p>
-                Kunjungi
-                <a href="https://www.usd.ac.id" target="_blank">
-                    website kampus saya
-                </a>.
-            </p>
-        </section>
+        </aside>
 
     </main>
-
-
-    <hr>
 
     <footer>
         <p style="text-align: center">
